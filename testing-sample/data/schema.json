@@ -1,0 +1,10 @@
+{
+    employees: [{
+        'repeat(80,100)': {
+            firstName: '{{firstName()}}',
+            lastName: '{{surname()}}',
+            hireDate: '{{date(new Date(1980,0,1))}}',
+            description: '{{lorem(1, "paragraphs")}}'
+        }
+    }]
+}

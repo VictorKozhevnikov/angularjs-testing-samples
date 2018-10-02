@@ -1,0 +1,25 @@
+<html ng-app="sampleApp">
+
+<head>
+    <title>
+        AngularJS sample
+    </title>
+</head>
+
+<body ng-controller="appController as ctrl">
+    <h1>AngularJS sample app</h1>
+    
+    <h2>Cache contents:</h2>
+
+    <div ng-repeat="(key, value) in ctrl.cacheData">
+        <span ng-bind="key"></span>
+        <span ng-bind="value"></span>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
+<script src="./app/app.module.js"></script>
+<script src="./app/app.controller.js"></script>
+<script src="./app/cache.service.js"></script>
+
+</html>
