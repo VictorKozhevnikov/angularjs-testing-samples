@@ -17,18 +17,4 @@ describe('Cache contents component', () => {
             }))
         })
     })
-
-    beforeEach(() => {
-        inject(['$compile', '$rootScope', function($compile, $rootScope) {
-            testElement = $compile('<cache-contents></cache-contents>')($rootScope);
-            $rootScope.$digest();
-        }]);
-    });
-
-    it('displays every item', () => {
-        console.log(testElement.html());
-        const numberOfItems = testElement.find('div').length;
-
-        expect(numberOfItems).toBe(3);
-    })
 });
