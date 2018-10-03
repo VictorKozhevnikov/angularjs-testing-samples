@@ -1,4 +1,10 @@
 describe('Cache contents component', () => {
+    const expectedCacheContents = {
+        a: 'apricot',
+        b: 'banana',
+        c: 'carrot'
+    };
+    let testElement;
     
     beforeEach(() => {
         module('sampleApp');
@@ -12,7 +18,4 @@ describe('Cache contents component', () => {
         })
     })
 
-    beforeEach(() => {
-
-    });
 });
